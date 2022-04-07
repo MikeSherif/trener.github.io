@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Quicksand:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+}
+.container {
+    max-width: 1167px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.mr_flex{
+    width: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.item{
+    margin-left: 20px;
+    font-family: "Quicksand",sans-serif;
+}
+.boot{
+    padding-top:15px;
+    width: 40px;
+    height: 53px;
+}
+.basket{
+    padding-top: 25px;
+}
+.nav-text{
+    line-height: 70px;
+    font-size: 15px;
+    color: white;
+}
+.hero-flex{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.hero{
+    background: url("../img/Livello 1.png") center  no-repeat;
+    background-size: cover;
+    height: 790px;
+    width: 100%;
+}
+.hero_content{
+    margin-top: 25%;
+    width: 77%;
+}
+.arrow{
+    margin-bottom: 25px;
+}
+.hero_title{
+
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+
+}
+.hero_description{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0.7;
+}
