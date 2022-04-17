@@ -192,9 +192,54 @@ header{
     width: 100%;
 }
 .num{
+    display: block;
     text-align: end;
+    color: #aa9b77;
 }
 .next{
     width: 20px;
     height: 20px;
+}
+.left-right{
+    display: block;
+    margin-top: 10px;
+    float: right;
+}
+.slider{
+    padding-top: 15px;
+}
+.slider__items {
+    counter-reset: slide;
+}
+
+.slider__item {
+    counter-increment: slide;
+}
+
+.slider__item>div::before {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aa9b77;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.slider__indicators {
+    display: none;
+}
+.themarket{
+    display: flex;
+    justify-content: space-between;
+}
+.hype{
+    width: 320px;
+    height: 380px;
+    background-color: #f5f6f7;
+}
+.size-drop{
+    width: 50px;
+    background-color: unset;
 }

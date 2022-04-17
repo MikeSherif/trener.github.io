@@ -7,14 +7,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Martin's Shop</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/simple-adaptive-slider.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-select.css">
+    <script defer src="js/simple-adaptive-slider.min.js"></script>
+    <script defer src="js/custom-select.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // инициализация слайдера
+            var slider = new SimpleAdaptiveSlider('.slider');
+
+            // назначим обработчик при нажатии на кнопку .btn-prev
+            document.querySelector('.arrow-prev').onclick = function () {
+                // перейдём к предыдущему слайду
+                slider.prev();
+            }
+            // назначим обработчик при нажатии на кнопку .btn-next
+            document.querySelector('.arrow-next').onclick = function () {
+                // перейдём к следующему слайду
+                slider.next();
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            new CustomSelect('#select-1', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L']
+                ],
+                onSelected(select, option) {
+                    // выбранное значение
+                    console.log(`Выбранное значение: ${select.value}`);
+                    // индекс выбранной опции
+                    console.log(`Индекс выбранной опции: ${select.selectedIndex}`);
+                    // выбранный текст опции
+                    const text = option ? option.textContent : '';
+                    console.log(`Выбранный текст опции: ${text}`);
+                },
+            });
+            document.querySelector('.select').addEventListener('select.change', (e) => {
+                const btn = e.target.querySelector('.select__toggle');
+                // выбранное значение
+                console.log(`Выбранное значение: ${btn.value}`);
+                // индекс выбранной опции
+                console.log(`Индекс выбранной опции: ${btn.dataset.index}`);
+                // выбранный текст опции
+                const selected = e.target.querySelector('.select__option_selected');
+                const text = selected ? selected.textContent : '';
+                console.log(`Выбранный текст опции: ${text}`);
+            });
+        })
+    </script>
 </head>
 <body>
     <header>
         <div class="container mr_flex">
             <img src="img/boot.png" alt="Sorry" class="boot">
             <div class="right">
-            <a href="#" class="item nav-text">Home</a>
+            <a href="#home" class="item nav-text">Home</a>
             <a href="#" class="item nav-text">Products</a>
             <a href="#" class="item basket">
                 <img src="img/fa-shopping-cart.png" alt="Sorry" class="basket">
@@ -24,7 +78,7 @@
 
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
         <div class="container hero-flex">
             <div class="hero_content">
                 <h1 class="hero_title">Our clothing , your comfort</h1>
@@ -65,13 +119,95 @@
                 </div>
                 <div class="clothes">
                     <div class="pages1">
-                        <p class="num">1 / 5</p>
+                        <p class="num"><span class="counter">1</span> / 5</p>
+                        <div class="left-right">
+                        <svg class="arrow-prev"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="11px" height="12px">
+                            <path fill-rule="evenodd"  fill="rgb(170, 155, 119)"
+                                  d="M9.856,2.039 C10.099,1.853 10.099,1.555 9.856,1.369 L8.245,0.133 C8.003,-0.053 7.615,-0.053 7.372,0.133 L0.173,5.658 C-0.070,5.844 -0.070,6.142 0.173,6.328 L7.372,11.853 C7.615,12.040 8.003,12.040 8.245,11.853 L9.856,10.617 C10.099,10.431 10.099,10.133 9.856,9.947 L4.704,5.993 L9.856,2.039 Z"/>
+                        </svg>
+                        <svg class="arrow-next"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="11px" height="12px">
+                            <path fill-rule="evenodd"  fill="rgb(170, 155, 119)"
+                                  d="M10.792,6.328 C11.035,6.142 11.035,5.844 10.792,5.658 L3.593,0.133 C3.350,-0.053 2.962,-0.053 2.719,0.133 L1.109,1.369 C0.866,1.555 0.866,1.853 1.109,2.039 L6.261,5.993 L1.109,9.947 C0.866,10.133 0.866,10.431 1.109,10.617 L2.719,11.853 C2.962,12.040 3.350,12.040 3.593,11.853 L10.792,6.328 Z"/>
+                        </svg>
+                        </div>
+                        <div class="slider">
+                            <div class="slider__wrapper">
+                                <div class="slider__items">
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                            <div id="select-1">
 
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="hype"></div>
+                                        <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                        <div class="hype"></div>
+                                        <div class="hype"></div>
+                                        <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                        <div class="hype"></div>
+                                        <div class="hype"></div>
+                                        <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                        <div class="hype"></div>
+                                        <div class="hype"></div>
+                                        <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
+               </div>
+
             </div>
         </section>
     </main>
+    <script>
+        const select1 = new CustomSelect('.select', {
+            defaultValue: 'Ford',
+            data: ['Volkswagen', 'Ford', 'Toyota', 'Nissan'],
+            onSelected(item) {
+                console.log(`Выбранное значение: ${item.textContent}`);
+            },
+        });
 
+        document.querySelector('.select').addEventListener('select.change', (e) => {
+            console.log(
+                `Выбранное значение: ${
+                    e.target.querySelector('.select__item_selected').textContent
+                }`
+            );
+        });
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/myScript.js"></script>
 </body>
 </html>
