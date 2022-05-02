@@ -37,17 +37,177 @@
                     ['xs', 'XS'],
                     ['s', 'S'],
                     ['m', 'M'],
-                    ['l', 'L']
+                    ['l', 'L'],
+                    ['xl', 'XL'],
                 ],
-                onSelected(select, option) {
-                    // выбранное значение
-                    console.log(`Выбранное значение: ${select.value}`);
-                    // индекс выбранной опции
-                    console.log(`Индекс выбранной опции: ${select.selectedIndex}`);
-                    // выбранный текст опции
-                    const text = option ? option.textContent : '';
-                    console.log(`Выбранный текст опции: ${text}`);
-                },
+            });
+            new CustomSelect('#select-2', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-3', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-4', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-5', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-6', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-7', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-8', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-9', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-10', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-11', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-12', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-13', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-14', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
+            });
+            new CustomSelect('#select-15', {
+                name: 'size',
+                targetValue: 'size',
+                options: [
+                    ['size','SIZE'],
+                    ['xs', 'XS'],
+                    ['s', 'S'],
+                    ['m', 'M'],
+                    ['l', 'L'],
+                    ['xl', 'XL'],
+                ],
             });
             document.querySelector('.select').addEventListener('select.change', (e) => {
                 const btn = e.target.querySelector('.select__toggle');
@@ -119,16 +279,16 @@
                 </div>
                 <div class="clothes">
                     <div class="pages1">
-                        <p class="num"><span class="counter">1</span> / 5</p>
+                        <p class="num"><span id="counter-value">1</span> / 5</p>
                         <div class="left-right">
-                        <svg class="arrow-prev"
+                        <svg class="arrow-prev" id="decrement-btn"
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="11px" height="12px">
                             <path fill-rule="evenodd"  fill="rgb(170, 155, 119)"
                                   d="M9.856,2.039 C10.099,1.853 10.099,1.555 9.856,1.369 L8.245,0.133 C8.003,-0.053 7.615,-0.053 7.372,0.133 L0.173,5.658 C-0.070,5.844 -0.070,6.142 0.173,6.328 L7.372,11.853 C7.615,12.040 8.003,12.040 8.245,11.853 L9.856,10.617 C10.099,10.431 10.099,10.133 9.856,9.947 L4.704,5.993 L9.856,2.039 Z"/>
                         </svg>
-                        <svg class="arrow-next"
+                        <svg class="arrow-next" id="increment-btn"
                                 xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="11px" height="12px">
@@ -141,59 +301,148 @@
                                 <div class="slider__items">
                                     <div class="slider__item">
                                         <div class="themarket">
-                                        <div class="hype">
-                                            <div class="size-drop">
-                                            <div id="select-1">
+                                            <div class="hype">
+
+                                                <div class="size-drop">
+                                                    <div id="select-1"></div>
+                                                </div>
+                                                <div class="pants">
+                                                    <img src="img/pants.png" alt="No photos!">
+                                                </div>
+                                                <div class="money-inf">
+                                                    <p class="money-inf-text">
+                                                        pants forclaz
+                                                    </p>
+                                                    <p class="money-inf-price">
+                                                        30,00€
+                                                    </p>
+                                                </div>
 
                                             </div>
+                                            <div class="hype">
+                                                <div class="size-drop">
+                                                    <div id="select-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="hype">
+                                                <div class="size-drop">
+                                                    <div id="select-3"></div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="hype"></div>
-                                        <div class="hype"></div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                                <div id="select-4"></div>
+                                            </div>
+                                        </div>
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                                <div id="select-5"></div>
+                                            </div>
+                                        </div>
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                                <div id="select-6"></div>
+                                            </div>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="slider__item">
                                         <div class="themarket">
-                                        <div class="hype"></div>
-                                        <div class="hype"></div>
-                                        <div class="hype"></div>
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                                <div id="select-7"></div>
+                                            </div>
+                                        </div>
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                                <div id="select-8"></div>
+                                            </div>
+                                        </div>
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                                <div id="select-9"></div>
+                                            </div>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="slider__item">
                                         <div class="themarket">
-                                        <div class="hype"></div>
-                                        <div class="hype"></div>
-                                        <div class="hype"></div>
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                                <div id="select-10"></div>
+                                            </div>
+                                        </div>
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                                <div id="select-11"></div>
+                                            </div>
+                                        </div>
+                                        <div class="hype">
+                                            <div class="size-drop">
+                                                <div id="select-12"></div>
+                                            </div>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="slider__item">
                                         <div class="themarket">
-                                        <div class="hype"></div>
-                                        <div class="hype"></div>
-                                        <div class="hype"></div>
-                                        </div>
-                                    </div>
-                                    <div class="slider__item">
-                                        <div class="themarket">
-                                            <div class="hype"></div>
-                                            <div class="hype"></div>
-                                            <div class="hype"></div>
+                                            <div class="hype">
+                                                <div class="size-drop">
+                                                    <div id="select-13"></div>
+                                                </div>
+                                            </div>
+                                            <div class="hype">
+                                                <div class="size-drop">
+                                                    <div id="select-14"></div>
+                                                </div>
+                                            </div>
+                                            <div class="hype">
+                                                <div class="size-drop">
+                                                    <div id="select-15"></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                </div>
-
             </div>
         </section>
+        <br><br><br>
     </main>
     <script>
+        //------------------Нумерация страниц--------------
+        const counterValueElement = document.getElementById("counter-value");
+        const incrementBtn = document.getElementById("increment-btn");
+        const decrementBtn = document.getElementById("decrement-btn");
+        let counterValue = 1;
+        function increment(){
+                ++counterValue;
+                if(counterValue === 6){
+                    counterValue = 1;}
+                counterValueElement.innerHTML = counterValue;
+        }
+        function decrement(){
+            --counterValue;
+            if (counterValue === 0) {
+                counterValue = 5;
+            }
+            counterValueElement.innerHTML = counterValue;
+        }
+        counterValueElement.innerHTML = counterValue;
+        incrementBtn.addEventListener("click", increment);
+        decrementBtn.addEventListener("click", decrement);
+
+        //----------------Нумерация страниц---------------
         const select1 = new CustomSelect('.select', {
-            defaultValue: 'Ford',
-            data: ['Volkswagen', 'Ford', 'Toyota', 'Nissan'],
+            defaultValue: 'Size',
+            data: ['Size', 'XS', 'S', 'M','L','XL'],
             onSelected(item) {
                 console.log(`Выбранное значение: ${item.textContent}`);
             },

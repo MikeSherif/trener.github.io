@@ -216,30 +216,50 @@ header{
     counter-increment: slide;
 }
 
-.slider__item>div::before {
-    content: counter(slide);
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #aa9b77;
-    font-style: italic;
-    font-size: 32px;
-    font-weight: bold;
-}
+/*.slider__item>div::before {*/
+/*    content: counter(slide);*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    right: 20px;*/
+/*    color: #aa9b77;*/
+/*    font-style: italic;*/
+/*    font-size: 32px;*/
+/*    font-weight: bold;*/
+/*    display: none;*/
+/*}*/
 
 .slider__indicators {
     display: none;
 }
+
 .themarket{
     display: flex;
     justify-content: space-between;
+    flex-flow: wrap;
 }
 .hype{
-    width: 320px;
+    min-width: 320px;
     height: 380px;
     background-color: #f5f6f7;
+    padding: 10px;
 }
 .size-drop{
-    width: 50px;
+    width: 70px;
     background-color: unset;
+}
+.pants{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.money-inf{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10px 0 10px;
+    font-size: 15px;
+}
+.money-inf-text{
+    text-transform: uppercase;
+    color: #aa9b77;
 }
