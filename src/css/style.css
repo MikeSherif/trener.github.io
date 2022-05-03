@@ -196,18 +196,22 @@ header{
     text-align: end;
     color: #aa9b77;
 }
+
 .next{
     width: 20px;
     height: 20px;
 }
+
 .left-right{
     display: block;
     margin-top: 10px;
     float: right;
 }
+
 .slider{
     padding-top: 15px;
 }
+
 .slider__items {
     counter-reset: slide;
 }
@@ -237,16 +241,19 @@ header{
     justify-content: space-between;
     flex-flow: wrap;
 }
+
 .hype{
     min-width: 320px;
     height: 380px;
     background-color: #f5f6f7;
     padding: 10px;
 }
+
 .size-drop{
     width: 70px;
     background-color: unset;
 }
+
 .pants{
     display: flex;
     justify-content: center;
@@ -259,7 +266,47 @@ header{
     padding: 40px 10px 0 10px;
     font-size: 15px;
 }
+
 .money-inf-text{
     text-transform: uppercase;
     color: #aa9b77;
+}
+
+.select-colors{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.colors{
+    padding-top: 5px;
+    width: 78px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle{
+    float: left;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+}
+
+#blue{
+    background-color: #165eb9;
+}
+
+#yellow{
+    background-color: #ffe637;
+}
+
+#grey{
+    background-color: #535253;
+}
+
+.t-shirt{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 12px;
 }
