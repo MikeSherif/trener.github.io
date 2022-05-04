@@ -188,12 +188,18 @@ header{
 .clothes{
     margin-top: 20px;
 }
-.pages1{
+.pages1,.pages2{
     width: 100%;
 }
 .num{
     display: block;
     text-align: end;
+    color: #aa9b77;
+}
+
+.num1{
+    display: block;
+    text-align: start;
     color: #aa9b77;
 }
 
@@ -208,8 +214,22 @@ header{
     float: right;
 }
 
-.slider{
+.left-right1{
+    display: block;
+    margin-top: 10px;
+
+}
+
+.slider,.slider1{
     padding-top: 15px;
+}
+
+.slider1 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .slider__items {
@@ -247,6 +267,12 @@ header{
     height: 380px;
     background-color: #f5f6f7;
     padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.hype:hover{
+    outline: 6px solid #aa9b77;
+    outline-offset: -6px;
 }
 
 .size-drop{
@@ -309,4 +335,75 @@ header{
     justify-content: center;
     margin-top: 50px;
     padding-bottom: 12px;
+}
+.woman{
+    margin-top: 5%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.woman h2{
+    margin-left: 5%;
+    font-size: 20px;
+    line-height: 50px;
+}
+.woman hr{
+    align-self: center;
+    width: 95%;
+    float: left;
+    height: 2px;
+    background-color: black;
+}
+.vanish{
+    height: 130px;
+}
+
+.about{
+    background-color: #aa9b77;
+    height: 400px;
+    width: 100%;
+}
+.about_flex{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+fieldset {
+    border: 2px solid #918363;
+}
+
+.about_us{
+    padding: 0 25px;
+    font-size: 20px;
+    color: #837659;
+    text-align: center;
+}
+
+.about_container{
+    padding: 10% 20%;
+    text-align: center;
+    color: #424242;
+}
+
+.fame{
+    height: 72px;
+    background-color: #535253;
+}
+.fame_flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.mike_kostya{
+    line-height: 72px;
+    margin-left: 15px;
+    color: white;
+}
+footer{
+    height: 352px;
+    background-color: #424242;
 }

@@ -16,16 +16,24 @@
         document.addEventListener('DOMContentLoaded', function () {
             // инициализация слайдера
             var slider = new SimpleAdaptiveSlider('.slider');
-
+            var slider1 = new SimpleAdaptiveSlider('.slider1');
             // назначим обработчик при нажатии на кнопку .btn-prev
             document.querySelector('.arrow-prev').onclick = function () {
                 // перейдём к предыдущему слайду
                 slider.prev();
             }
+            document.querySelector('.arrow-prev1').onclick = function () {
+                // перейдём к предыдущему слайду
+                slider1.prev();
+            }
             // назначим обработчик при нажатии на кнопку .btn-next
             document.querySelector('.arrow-next').onclick = function () {
                 // перейдём к следующему слайду
                 slider.next();
+            }
+            document.querySelector('.arrow-next1').onclick = function () {
+                // перейдём к следующему слайду
+                slider1.next();
             }
         });
         document.addEventListener('DOMContentLoaded', () => {
@@ -302,7 +310,6 @@
                                     <div class="slider__item">
                                         <div class="themarket">
                                             <div class="hype">
-
                                                 <div class="size-drop">
                                                     <div id="select-1"></div>
                                                 </div>
@@ -434,8 +441,113 @@
                </div>
             </div>
         </section>
-        <br><br><br>
+        <section class="woman-items">
+            <div class="container">
+                <div class="woman">
+                    <hr>
+                    <h2>WOMAN</h2>
+                </div>
+                <div class="clothes">
+                    <div class="pages2">
+                        <p class="num1"><span id="counter-value1">1</span> / 5</p>
+                        <div class="left-right1">
+                            <svg class="arrow-prev1" id="decrement-btn1"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="11px" height="12px">
+                                <path fill-rule="evenodd"  fill="rgb(170, 155, 119)"
+                                      d="M9.856,2.039 C10.099,1.853 10.099,1.555 9.856,1.369 L8.245,0.133 C8.003,-0.053 7.615,-0.053 7.372,0.133 L0.173,5.658 C-0.070,5.844 -0.070,6.142 0.173,6.328 L7.372,11.853 C7.615,12.040 8.003,12.040 8.245,11.853 L9.856,10.617 C10.099,10.431 10.099,10.133 9.856,9.947 L4.704,5.993 L9.856,2.039 Z"/>
+                            </svg>
+                            <svg class="arrow-next1" id="increment-btn1"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="11px" height="12px">
+                                <path fill-rule="evenodd"  fill="rgb(170, 155, 119)"
+                                      d="M10.792,6.328 C11.035,6.142 11.035,5.844 10.792,5.658 L3.593,0.133 C3.350,-0.053 2.962,-0.053 2.719,0.133 L1.109,1.369 C0.866,1.555 0.866,1.853 1.109,2.039 L6.261,5.993 L1.109,9.947 C0.866,10.133 0.866,10.431 1.109,10.617 L2.719,11.853 C2.962,12.040 3.350,12.040 3.593,11.853 L10.792,6.328 Z"/>
+                            </svg>
+                        </div>
+                        <div class="slider1">
+                            <div class="slider__wrapper">
+                                <div class="slider__items">
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="themarket">
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                            <div class="hype"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="vanish"></div>
+        <section class="about">
+            <div class="container">
+                <div class="about_flex">
+                <fieldset>
+                    <legend align="center"><span class="about_us">ABOUT US</span></legend>
+                    <p class="about_container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur<br>
+                        dolorum earum eius est excepturi, itaque nam optio praesentium<br>
+                        quia quod recusandae repellat? Dolorem, inventore, ipsum. Doloremque,<br>
+                        doloribus!</p>
+                </fieldset>
+                </div>
+            </div>
+        </section>
+        <section class="fame">
+            <div class="container fame_flex">
+                <svg class="twitter"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="29px" height="24px">
+                    <path fill-rule="evenodd"  fill="rgb(66, 66, 66)"
+                          d="M29.005,2.852 C27.937,3.321 26.778,3.659 25.581,3.790 C26.814,3.040 27.753,1.859 28.195,0.453 C27.054,1.146 25.765,1.653 24.421,1.915 C23.335,0.734 21.789,0.003 20.077,0.003 C16.782,0.003 14.131,2.721 14.131,6.058 C14.131,6.527 14.186,6.996 14.278,7.446 C9.345,7.183 4.945,4.783 2.019,1.109 C1.503,2.009 1.209,3.040 1.209,4.165 C1.209,6.264 2.258,8.120 3.859,9.208 C2.884,9.170 1.963,8.889 1.172,8.439 C1.172,8.458 1.172,8.496 1.172,8.514 C1.172,11.458 3.215,13.895 5.939,14.457 C5.443,14.589 4.909,14.664 4.375,14.664 C3.988,14.664 3.620,14.626 3.252,14.570 C4.007,16.970 6.197,18.713 8.811,18.769 C6.768,20.400 4.209,21.356 1.430,21.356 C0.932,21.356 0.472,21.338 -0.006,21.282 C2.626,23.006 5.755,24.000 9.124,24.000 C20.059,24.000 26.041,14.776 26.041,6.771 C26.041,6.508 26.041,6.246 26.023,5.983 C27.183,5.121 28.195,4.052 29.005,2.852 Z"/>
+                </svg>
+                <p class="mike_kostya">" Mike & Kosda Company "</p>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="trekking">
+
+            </div>
+            <div class="contacts">
+
+            </div>
+        </div>
+    </footer>
     <script>
         //------------------Нумерация страниц--------------
         const counterValueElement = document.getElementById("counter-value");
