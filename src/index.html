@@ -16,6 +16,10 @@
         document.addEventListener('DOMContentLoaded', function () {
             // инициализация слайдера
             var slider = new SimpleAdaptiveSlider('.slider');
+            function test(){
+                alert(1);
+            }
+            slider._addEventListener('e', test);
             var slider1 = new SimpleAdaptiveSlider('.slider1');
             // назначим обработчик при нажатии на кнопку .btn-prev
             document.querySelector('.arrow-prev').onclick = function () {
@@ -228,6 +232,7 @@
                 const text = selected ? selected.textContent : '';
                 console.log(`Выбранный текст опции: ${text}`);
             });
+
         })
     </script>
 </head>
@@ -598,6 +603,7 @@
             counterValueElement.innerHTML = counterValue;
         }
         counterValueElement.innerHTML = counterValue;
+
         incrementBtn.addEventListener("click", increment);
         decrementBtn.addEventListener("click", decrement);
 
