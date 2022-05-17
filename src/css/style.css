@@ -442,3 +442,9 @@ footer{
     text-align: right;
     margin-top: 10px;
 }
+.swiper{
+    padding-top: 15px;
+}
+.swiper_slide {
+    width: 100%;
+}

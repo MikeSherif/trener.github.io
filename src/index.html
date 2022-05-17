@@ -7,39 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Martin's Shop</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/simple-adaptive-slider.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom-select.css">
-    <script defer src="js/simple-adaptive-slider.min.js"></script>
+
     <script defer src="js/custom-select.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // инициализация слайдера
-            var slider = new SimpleAdaptiveSlider('.slider');
-            function test(){
-                alert(1);
-            }
-            slider._addEventListener('e', test);
+
             var slider1 = new SimpleAdaptiveSlider('.slider1');
             // назначим обработчик при нажатии на кнопку .btn-prev
-            document.querySelector('.arrow-prev').onclick = function () {
-                // перейдём к предыдущему слайду
-                slider.prev();
-            }
             document.querySelector('.arrow-prev1').onclick = function () {
                 // перейдём к предыдущему слайду
                 slider1.prev();
             }
             // назначим обработчик при нажатии на кнопку .btn-next
-            document.querySelector('.arrow-next').onclick = function () {
-                // перейдём к следующему слайду
-                slider.next();
-            }
             document.querySelector('.arrow-next1').onclick = function () {
                 // перейдём к следующему слайду
                 slider1.next();
             }
         });
+
         document.addEventListener('DOMContentLoaded', () => {
             new CustomSelect('#select-1', {
                 name: 'size',
@@ -309,10 +298,10 @@
                                   d="M10.792,6.328 C11.035,6.142 11.035,5.844 10.792,5.658 L3.593,0.133 C3.350,-0.053 2.962,-0.053 2.719,0.133 L1.109,1.369 C0.866,1.555 0.866,1.853 1.109,2.039 L6.261,5.993 L1.109,9.947 C0.866,10.133 0.866,10.431 1.109,10.617 L2.719,11.853 C2.962,12.040 3.350,12.040 3.593,11.853 L10.792,6.328 Z"/>
                         </svg>
                         </div>
-                        <div class="slider">
-                            <div class="slider__wrapper">
-                                <div class="slider__items">
-                                    <div class="slider__item">
+                        <br><br>
+                        <div class="swiper swiper-man">
+                            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                             <div class="hype">
                                                 <div class="size-drop">
@@ -329,7 +318,6 @@
                                                         30,00€
                                                     </p>
                                                 </div>
-
                                             </div>
                                             <div class="hype">
                                                 <div class="select-colors">
@@ -363,7 +351,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="slider__item">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                         <div class="hype">
                                             <div class="size-drop">
@@ -382,7 +370,7 @@
                                         </div>
                                         </div>
                                     </div>
-                                    <div class="slider__item">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                         <div class="hype">
                                             <div class="size-drop">
@@ -401,7 +389,7 @@
                                         </div>
                                         </div>
                                     </div>
-                                    <div class="slider__item">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                         <div class="hype">
                                             <div class="size-drop">
@@ -420,7 +408,7 @@
                                         </div>
                                         </div>
                                     </div>
-                                    <div class="slider__item">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                             <div class="hype">
                                                 <div class="size-drop">
@@ -439,7 +427,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -471,10 +458,9 @@
                                       d="M10.792,6.328 C11.035,6.142 11.035,5.844 10.792,5.658 L3.593,0.133 C3.350,-0.053 2.962,-0.053 2.719,0.133 L1.109,1.369 C0.866,1.555 0.866,1.853 1.109,2.039 L6.261,5.993 L1.109,9.947 C0.866,10.133 0.866,10.431 1.109,10.617 L2.719,11.853 C2.962,12.040 3.350,12.040 3.593,11.853 L10.792,6.328 Z"/>
                             </svg>
                         </div>
-                        <div class="slider1">
-                            <div class="slider__wrapper">
-                                <div class="slider__items">
-                                    <div class="slider__item">
+                        <div class="swiper swiper-lalo">
+                            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                             <div class="hype">
                                                 <div class="item_information">10 LITRI</div>
@@ -494,35 +480,34 @@
                                             <div class="hype"></div>
                                         </div>
                                     </div>
-                                    <div class="slider__item">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                             <div class="hype"></div>
                                             <div class="hype"></div>
                                             <div class="hype"></div>
                                         </div>
                                     </div>
-                                    <div class="slider__item">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                             <div class="hype"></div>
                                             <div class="hype"></div>
                                             <div class="hype"></div>
                                         </div>
                                     </div>
-                                    <div class="slider__item">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                             <div class="hype"></div>
                                             <div class="hype"></div>
                                             <div class="hype"></div>
                                         </div>
                                     </div>
-                                    <div class="slider__item">
+                                    <div class="swiper-slide">
                                         <div class="themarket">
                                             <div class="hype"></div>
                                             <div class="hype"></div>
                                             <div class="hype"></div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -555,6 +540,7 @@
                 <p class="mike_kostya">" Mike & Kosda Company "</p>
             </div>
         </section>
+
     </main>
     <footer>
         <div class="container footer_flex">
@@ -583,17 +569,33 @@
             </div>
         </div>
     </footer>
+    <script src="js/swiper-bundle.min.js"></script>
     <script>
         //------------------Нумерация страниц--------------
         const counterValueElement = document.getElementById("counter-value");
+        const counterValueElement1 = document.getElementById("counter-value1");
         const incrementBtn = document.getElementById("increment-btn");
         const decrementBtn = document.getElementById("decrement-btn");
         let counterValue = 1;
+        let counterValue1 = 1;
         function increment(){
-                ++counterValue;
-                if(counterValue === 6){
-                    counterValue = 1;}
-                counterValueElement.innerHTML = counterValue;
+            ++counterValue;
+            if(counterValue === 6){
+                counterValue = 1;}
+            counterValueElement.innerHTML = counterValue;
+        }
+        function increment1(){
+            ++counterValue1;
+            if(counterValue1 === 6){
+                counterValue1 = 1;}
+            counterValueElement1.innerHTML = counterValue1;
+        }
+        function decrement1(){
+            --counterValue1;
+            if (counterValue1 === 0) {
+                counterValue1 = 5;
+            }
+            counterValueElement1.innerHTML = counterValue1;
         }
         function decrement(){
             --counterValue;
@@ -603,11 +605,36 @@
             counterValueElement.innerHTML = counterValue;
         }
         counterValueElement.innerHTML = counterValue;
-
-        incrementBtn.addEventListener("click", increment);
-        decrementBtn.addEventListener("click", decrement);
-
+        counterValueElement1.innerHTML = counterValue1;
         //----------------Нумерация страниц---------------
+        const swiper = new Swiper('.swiper-man', {
+            loop: false,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".arrow-next",
+                prevEl: ".arrow-prev",
+            },
+        });
+        swiper.on('slideNextTransitionStart', function () {
+            increment();
+        });
+        swiper.on('slidePrevTransitionStart', function () {
+            decrement();
+        });
+        const swiper1 = new Swiper('.swiper-lalo', {
+            loop: false,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".arrow-next1",
+                prevEl: ".arrow-prev1",
+            },
+        });
+        swiper1.on('slideNextTransitionStart', function () {
+            increment1();
+        });
+        swiper1.on('slidePrevTransitionStart', function () {
+            decrement1();
+        });
         const select1 = new CustomSelect('.select', {
             defaultValue: 'Size',
             data: ['Size', 'XS', 'S', 'M','L','XL'],
@@ -624,6 +651,7 @@
             );
         });
     </script>
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/myScript.js"></script>
 </body>
